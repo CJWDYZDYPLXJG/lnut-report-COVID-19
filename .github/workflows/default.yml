@@ -11,3 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Report
         run: /bin/bash ./report.sh
+        env: 
+          LNUT_USER: ${{ secrets.LNUT_USER }}
+          LNUT_PASSWORD: ${{ secrets.LNUT_PASSWORD }}
+          NOW_ADDRESS: ${{ secrets.NOW_ADDRESS }}
