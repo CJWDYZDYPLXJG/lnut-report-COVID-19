@@ -75,10 +75,8 @@ report=$(
 
 echo "$report"
 
-result=$(echo "$report" | jq '.result')
+message=$(echo "$report" | jq '.message')
 
-if [[ $result == null ]]; then
+if [[ $message != *"添加成功"* ]]; then
   exit 1
 fi
-
-echo "success"
