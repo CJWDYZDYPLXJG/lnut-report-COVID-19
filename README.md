@@ -1,4 +1,4 @@
-# lnut-auto-report-COVID-19
+# lnut-report-COVID-19
 
 提供一个 shell, 实现上报个人状况到辽宁工业大学平安通
 
